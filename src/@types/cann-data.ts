@@ -1,24 +1,32 @@
+type TRecord = {
+  draw: number;
+  goalsAgainst: number;
+  goalsFor: number;
+  lose: number;
+  matchsPlayed: number;
+  win: number;
+};
+
 export type TTeam = {
-  competition_id: string;
-  drawn: string;
-  goal_diff: string;
-  goals_conceded: string;
-  goals_scored: string;
-  group_id: string;
-  group_name: string;
-  league_id: string;
-  lost: string;
-  matches: string;
-  name: string;
-  points: string;
-  rank: string;
-  season_id: string;
-  team_id: string;
-  won: string;
+  all: TRecord;
+  away: TRecord;
+  description: string | null;
+  forme: string;
+  goalsDiff: number;
+  group: string;
+  home: TRecord;
+  lastUpdate: string;
+  logo: string;
+  points: number;
+  rank: number;
+  status: string;
+  team_id: number;
+  teamName: string;
 };
 
 export type TParsedTeam = Array<{
   name: string;
-  rank: number;
+  logo: string;
   points: number;
+  rank: number;
 }>;

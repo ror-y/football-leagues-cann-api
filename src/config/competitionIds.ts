@@ -1,9 +1,9 @@
 const dict: { [key: string]: string } = {
-  bundesliga: "1",
+  bundesliga: "3510",
   "premier-league": "3456",
-  "la-liga": "3",
-  "serie-a": "4",
-  "ligue-1": "5",
+  "la-liga": "3513",
+  "serie-a": "3576",
+  "ligue-1": "3506",
 };
 
 export default dict;
