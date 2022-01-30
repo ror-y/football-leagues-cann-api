@@ -1,4 +1,4 @@
-const dict: { [key: string]: string } = {
+const dict: Record<string, string> = {
   bundesliga: "3510",
   "premier-league": "3456",
   "la-liga": "3513",

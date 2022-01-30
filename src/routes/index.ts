@@ -2,9 +2,10 @@ import "dotenv/config";
 import { Router } from "express";
 const cannRouter = Router();
 import { getLeagueData } from "./CannData";
+import leagues from '../config/leagues'
 
 cannRouter.get(
-  [`/bundesliga`, `/premier-league`, `/la-liga`, `/serie-a`, `/ligue-1`],
+  leagues,
   getLeagueData
 );
 

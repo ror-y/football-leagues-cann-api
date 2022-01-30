@@ -1,0 +1,1 @@
+export default [`/bundesliga`, `/premier-league`, `/la-liga`, `/serie-a`, `/ligue-1`]
